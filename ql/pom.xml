@@ -712,6 +712,9 @@
                   <include>org.apache.hive:spark-client</include>
                   <include>joda-time:joda-time</include>
                 </includes>
+                <excludes>
+                  <exclude>com.google.guava:guava</exclude>
+                </excludes>
               </artifactSet>
               <relocations>
                 <relocation>
