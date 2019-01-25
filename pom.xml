@@ -21,7 +21,7 @@
   </parent>
   <groupId>org.apache.hive</groupId>
   <artifactId>hive</artifactId>
-  <version>1.2.2-dp</version>
+  <version>1.2.2-dp-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Hive</name>
@@ -1230,4 +1230,14 @@
       </properties>
     </profile>
   </profiles>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>datapipeline</id>
+      <url>http://registry.datapipeline.com:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>datapipeline</id>
+      <url>http://registry.datapipeline.com:8081/nexus/content/repositories/pub/</url>
+    </repository>
+  </distributionManagement>
 </project>
