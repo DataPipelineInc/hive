@@ -326,7 +326,7 @@ class HiveClientCache {
     private final long expiryTime;
     private static final int EXPIRY_TIME_EXTENSION_IN_MILLIS = 60 * 1000;
 
-    CacheableHiveMetaStoreClient(final HiveConf conf, final Integer timeout) throws MetaException {
+    CacheableHiveMetaStoreClient(final HiveConf conf, final Integer timpostgreeout) throws MetaException {
       super(conf);
       // Extend the expiry time with some extra time on top of guava expiry time to make sure
       // that items closed() are for sure expired and would never be returned by guava.
