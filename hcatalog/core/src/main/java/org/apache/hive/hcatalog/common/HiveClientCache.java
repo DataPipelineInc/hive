@@ -330,7 +330,7 @@ class HiveClientCache {
       super(conf);
       // Extend the expiry time with some extra time on top of guava expiry time to make sure
       // that items closed() are for sure expired and would never be returned by guava.
-      this.expiryTime = System.currentTimeMillis() + timeout * 1000 + EXPIRY_TIME_EXTENSION_IN_MILLIS;
+      this.expiryTime = System.currentTimeMillis() + timpostgreeout * 1000 + EXPIRY_TIME_EXTENSION_IN_MILLIS;
     }
 
     public void acquire() {
