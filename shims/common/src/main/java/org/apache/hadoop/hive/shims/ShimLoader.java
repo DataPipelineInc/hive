@@ -154,7 +154,7 @@ public abstract class ShimLoader {
    * is mapped to "0.23".
    */
   public static String getMajorVersion() {
-    String vers = VersionInfo.getVersion();
+    String vers = org.apache.hadoop.util.VersionInfo.getVersion();
 
     String[] parts = vers.split("\\.");
     if (parts.length < 2) {
